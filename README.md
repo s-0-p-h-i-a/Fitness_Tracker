@@ -69,7 +69,24 @@ This project helps me practice and understand:
 - 🧠 Control over program flow and variable scope
     
 - 📝 Incremental design and documentation practices
-    
+
+
+---
+## 📝 How to Use
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/s-0-p-h-i-a/Fitness_Tracker.git
+
+2. Choose a version then compile the code using a C++ compiler:
+    ```bash
+   g++ fitness_tracker_v2_1.cc -o fitness_tracker_v2_1
+
+4. Run the program:
+      ```bash
+    ./fitness_tracker_v2_1
+
+5. Follow the on-screen prompts to enter your birth date.
 
 ---
 ## 🗃️ Files & Structure
