@@ -84,7 +84,7 @@ This project helps me practice and understand:
     
 - `README.md`: this file
     
-- `devlogs: cleaned-up version-specific development logs
+- Devlogs: cleaned-up version-specific development logs
     
 
 Each `.cc` file begins with an in-code documentation block derived from raw notes.
