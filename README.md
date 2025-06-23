@@ -16,17 +16,18 @@ This project is part of my hands-on learning journey with **C++**, focusing on:
 - Structuring and documenting each development phase with care and clarity
     
 
-Each version adds one or more new concepts while preserving readability and traceability.  
+Each version adds one or more new concepts while preserving readability and traceability.
 
 ---
 ## 📆 Version Progression
 
-| Version | Focus             | Key Features                                      |
-| ------- | ----------------- | ------------------------------------------------- |
-| `v0`    | Manual logic only | Fully explicit blocks with no loops or validation |
-| `v1`    | Grouped logic     | Nested switches to reduce duplication             |
-| `v2.0`  | Iteration         | `for` loops for input/output, no validation       |
-| `v2.1`  | Input validation  | Range checks using `if` logic, retry handling     |
+| Version | Focus               | Key Features                                                                 |
+| ------- | ------------------- | ---------------------------------------------------------------------------- |
+| `v0`    | Manual logic only   | Fully explicit blocks with no loops or validation                            |
+| `v1`    | Grouped logic       | Nested switches to reduce duplication                                        |
+| `v2.0`  | Iteration           | `for` loops for input/output, no validation                                  |
+| `v2.1`  | Input validation    | Range checks using `if` logic, retry handling                                |
+| `v2.2`  | Error handling prep | `do-while` input loops, loop limit for bad input, groundwork for type checks |
 
 ---
 ## 🧠 Core Concept
@@ -40,7 +41,6 @@ Each version tracks **four workout types**:
 - Core
     
 - Cardio
-    
 
 Users enter how often they completed each type per week over 4 weeks. The program:
 
@@ -49,7 +49,6 @@ Users enter how often they completed each type per week over 4 weeks. The progra
 - Classifies performance level
     
 - Outputs personalised feedback
-    
 
 ---
 ## 🔧 Learning Objectives
@@ -58,7 +57,7 @@ This project helps me practice and understand:
 
 - 📥 Input/output operations
     
-- 🔁 Loop structures (`for`)
+- 🔁 Loop structures (`for`, `do-while`)
     
 - 🧭 Branching (`if`, `switch`)
     
@@ -66,10 +65,11 @@ This project helps me practice and understand:
     
 - 🧪 Input validation strategies
     
+- 🚨 Defensive programming under constraints (e.g., no `cin.fail()` yet)
+    
 - 🧠 Control over program flow and variable scope
     
 - 📝 Incremental design and documentation practices
-
 
 ---
 ## 📝 How to Use
@@ -77,14 +77,17 @@ This project helps me practice and understand:
 1. Clone the repository:
    ```bash
    git clone https://github.com/s-0-p-h-i-a/Fitness_Tracker.git
+```
 
 2. Choose a version then compile the code using a C++ compiler:
-    ```bash
+```bash
    g++ fitness_tracker_v2_1.cc -o fitness_tracker_v2_1
+```
 
 3. Run the program:
-      ```bash
-    ./fitness_tracker_v2_1
+ ```bash
+   ./fitness_tracker_v2_1
+```
 
 4. Follow the on-screen prompts to enter your workouts.
 
@@ -98,11 +101,12 @@ This project helps me practice and understand:
 - `fitnesstracker_v2_0.cc`: introduces `for` loops
     
 - `fitnesstracker_v2_1.cc`: adds input validation (0–7 range)
+
+- `fitnesstracker_v2_2.cc`: adds do-while loops, loop limiter, prepares for type checking
     
 - `README.md`: this file
     
 - Devlogs: cleaned-up version-specific development logs
-    
 
 Each `.cc` file begins with an in-code documentation block derived from raw notes.
 
@@ -115,14 +119,13 @@ Planned improvements as I deepen my C++ knowledge:
     
 - Create **functions** for modularity and reuse
     
-- Implement **more robust input validation** (e.g. type checking)
+- Implement **more robust input validation** (e.g. cin.fail(), type checking)
     
 - Allow **custom workout goals** and longer time spans
     
 - Track **workout distribution** (e.g., even vs. clumped activity)
-    
+	
 - Visualize progress using **text-based summaries or graphs**
-    
 
 ---
 ### 🧠 Documentation Workflow & AI Assistance
