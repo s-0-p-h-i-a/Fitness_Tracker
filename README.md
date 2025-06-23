@@ -82,11 +82,11 @@ This project helps me practice and understand:
     ```bash
    g++ fitness_tracker_v2_1.cc -o fitness_tracker_v2_1
 
-4. Run the program:
+3. Run the program:
       ```bash
     ./fitness_tracker_v2_1
 
-5. Follow the on-screen prompts to enter your workouts.
+4. Follow the on-screen prompts to enter your workouts.
 
 ---
 ## 🗃️ Files & Structure
