@@ -42,7 +42,7 @@ Each version tracks **four workout types**:
 - Cardio
     
 
-Users enter the number of times each type was performed per week for 4 weeks. The program:
+Users enter how often they completed each type per week over 4 weeks. The program:
 
 - Totals monthly frequency for each workout type
     
@@ -86,7 +86,7 @@ This project helps me practice and understand:
       ```bash
     ./fitness_tracker_v2_1
 
-5. Follow the on-screen prompts to enter your birth date.
+5. Follow the on-screen prompts to enter your workouts.
 
 ---
 ## 🗃️ Files & Structure
