@@ -1,75 +1,69 @@
-# 🏋️‍♀️ Fitness Tracker — C++ Learning Project
+# Fitness Tracker — C++ Learning Project
 
-A progressive, versioned C++ project for tracking monthly workout consistency while practicing fundamental programming structures. Each version explores new C++ concepts while reinforcing clean code habits, manual control flow, and modular thinking without abstraction tools.
+A progressive, versioned C++ project for tracking monthly workout consistency while practicing core programming concepts. Each version explores new C++ structures while reinforcing clean code habits, control flow, and modular thinking.
 
 ---
-## 📌 Overview
+## Overview
 
-This project is part of my hands-on learning journey with **C++**, focusing on:
+Part of my hands-on **C++ learning journey**, focusing on:
 
 - Building procedural logic from the ground up
-    
-- Practicing core programming concepts (loops, conditionals, input/output)
-    
-- Designing maintainable code before using advanced tools like arrays or functions
-    
-- Structuring and documenting each development phase with care and clarity
-    
 
-Each version adds one or more new concepts while preserving readability and traceability.
+- Practicing functions, loops, conditionals, and input/output
 
----
-## 📆 Version Progression
+- Structuring maintainable code before advanced tools (arrays, structs)
 
-| Version | Focus               | Key Features                                                                 |
-| ------- | ------------------- | ---------------------------------------------------------------------------- |
-| `v0`    | Manual logic only   | Fully explicit blocks with no loops or validation                            |
-| `v1`    | Grouped logic       | Nested switches to reduce duplication                                        |
-| `v2.0`  | Iteration           | `for` loops for input/output, no validation                                  |
-| `v2.1`  | Input validation    | Range checks using `if` logic, retry handling                                |
-| `v2.2`  | Error handling prep | `do-while` input loops, loop limit for bad input, groundwork for type checks |
+- Documenting development phases for clarity and traceability
+
+v3.0 introduces **modular functions** for input, validation, calculation, feedback, and output, preparing for scalable, reusable code.
 
 ---
-## 🧠 Core Concept
+## Version Progression
 
-Each version tracks **four workout types**:
-
-- Upper Body
-    
-- Lower Body
-    
-- Core
-    
-- Cardio
-
-Users enter how often they completed each type per week over 4 weeks. The program:
-
-- Totals monthly frequency for each workout type
-    
-- Classifies performance level
-    
-- Outputs personalised feedback
+|Version|Focus|Key Features|
+|---|---|---|
+|`v0`|Manual logic|Fully explicit blocks, no loops or validation|
+|`v1`|Grouped logic|Nested switches to reduce duplication|
+|`v2.0`|Iteration|`for` loops for input/output, no validation|
+|`v2.1`|Input validation|Range checks using `if`, retry handling|
+|`v2.2`|Error handling prep|`do-while` loops, loop limiter for bad input, groundwork for type checks|
+|`v3.0`|Modular refactor|Functions for input, validation, calculation, level assignment, output; while-loop input validation; reusable workflow|
 
 ---
-## 🔧 Learning Objectives
+## Core Concept
 
-This project helps me practice and understand:
+Tracks **four workout types**: Upper Body, Lower Body, Core, Cardio
 
-- 📥 Input/output operations
-    
-- 🔁 Loop structures (`for`, `do-while`)
-    
-- 🧭 Branching (`if`, `switch`)
-    
-- 🧱 Manual modularity and code reuse
-    
-- 🧪 Input validation strategies
-    
-- 🚨 Defensive programming under constraints (e.g., no `cin.fail()` yet)
-    
-- 🧠 Control over program flow and variable scope
-    
-- 📝 Incremental design and documentation practices
+- Users enter weekly workouts over 4 weeks
+
+- Program totals monthly frequency, assigns fitness level, and outputs feedback
+
+**Frequency Categories:**
+
+- 0–7: insufficient (level 1)
+
+- 8–21: good consistency (level 2)
+
+- 22–28: excellent (level 3)
+
+---
+## Learning Objectives
+
+v3.0 helps practice:
+
+- Procedural input/output operations
+
+- Loop structures (`for`, `while`) and branching (`if`, `switch`)
+
+- Function-based modularity and reusable logic
+
+- Input validation strategies
+
+- Defensive programming under constraints
+
+- Control over variable scope and program flow
+
+- Incremental design and documentation habits
 
 ---
 ## 📝 How to Use
@@ -92,57 +86,45 @@ This project helps me practice and understand:
 4. Follow the on-screen prompts to enter your workouts.
 
 ---
-## 🗃️ Files & Structure
+## Files & Structure
 
-- `fitnesstracker_v0.cc`: fully manual, verbose version
-    
-- `fitnesstracker_v1.cc`: grouped logic using nested `switch` structures
-    
-- `fitnesstracker_v2_0.cc`: introduces `for` loops
-    
-- `fitnesstracker_v2_1.cc`: adds input validation (0–7 range)
+- `fitnesstracker_v0.cc` → manual, verbose version
 
-- `fitnesstracker_v2_2.cc`: adds do-while loops, loop limiter, prepares for type checking
-    
-- `README.md`: this file
-    
-- Devlogs: cleaned-up version-specific development logs
+- `fitnesstracker_v1.cc` → grouped logic with nested switches
 
-Each `.cc` file begins with an in-code documentation block derived from raw notes.
+- `fitnesstracker_v2_0.cc` → introduces `for` loops
 
----
-## 🚀 Future Directions
+- `fitnesstracker_v2_1.cc` → adds range-based input validation
 
-Planned improvements as I deepen my C++ knowledge:
+- `fitnesstracker_v2_2.cc` → do-while loops, loop limiter, groundwork for type checking
 
-- Use **arrays** to simplify data storage
-    
-- Create **functions** for modularity and reuse
-    
-- Implement **more robust input validation** (e.g. cin.fail(), type checking)
-    
-- Allow **custom workout goals** and longer time spans
-    
-- Track **workout distribution** (e.g., even vs. clumped activity)
-	
-- Visualize progress using **text-based summaries or graphs**
+- `fitnesstracker_v3_0.cc` → modular refactor with functions, while-loop validation, and reusable workflow
+
+- `README.md` → this file
+
+- Devlogs → version-specific development notes
+
+
+Each `.cc` file starts with an in-code documentation block derived from raw notes.
 
 ---
-### 🧠 Documentation Workflow & AI Assistance
+## Future Directions
 
-All documentation in this project (README, dev logs, and code comments) is based on original engineering notes taken during development. These notes are written manually on top of the `.cc` source file as I work.
+- Replace repeated variables with **arrays/structs** for scalability
 
-To improve clarity and structure, I use AI tools selectively to assist with formatting, polishing, and summarising the content — particularly for:
-- Drafting new README versions based on raw notes and previous versions
-- Generating development logs that clearly trace design decisions, also based on raw notes and previous versions
-- Condensing raw notes into opening in-code documentation blocks
+- Expand to **variable-length months** and **multi-month cycles**
 
-All AI-assisted outputs are reviewed and edited by me. No code, decisions, or technical content are generated or altered without verification and approval.  
-Raw notes are preserved in a dev diary folder for traceability and transparency.
+- Integrate **type-safe input** using `cin.fail()`
 
-This workflow is designed to maintain both high clarity and authorship integrity.
+- Further modularize input + validation logic
+
+- Add nuanced feedback and realistic level assignment
+
+- Optionally visualize progress via **text-based summaries or graphs**
 
 ---
+## Documentation Workflow & AI Assistance
 
-**Made with C++, consistency, and curiosity.**  
-_This project documents my learning journey toward embedded systems and structured programming._ 🛠️
+All documentation is based on original engineering notes taken during development. AI is used selectively to assist with formatting, summarizing, and polishing, but all code decisions are manually verified. Raw notes are preserved in a dev diary for traceability.
+
+This workflow ensures high clarity and authorship integrity.
