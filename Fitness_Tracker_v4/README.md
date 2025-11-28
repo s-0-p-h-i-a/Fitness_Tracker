@@ -3,6 +3,7 @@
 ## Overview
 This project is a refactored version of a console-based fitness tracker. The main focus of this update was **improving modularity, input validation, and variable management**.
 
+---
 ### Key Changes
 1. **Input Validation**
    - Basic implementation using `cin.fail` to handle invalid input.
@@ -17,11 +18,7 @@ This project is a refactored version of a console-based fitness tracker. The mai
    - Variables now “die” immediately after their values are used, improving clarity and resource management.
    - Emphasis on scope and data flow between functions and files.
 
-4. **Added Functions Index**
-   - [functions_index.md](./functions_index.md)
-   - List of all header files with the functions defined in each of them
-   - Includes functions called in file + where functions from file are called
-
+---
 ### Program Flow
 
 **INPUT -> INPUT PROCESSING -> OUTPUT DEFINITION -> OUTPUT**
@@ -35,3 +32,6 @@ This project is a refactored version of a console-based fitness tracker. The mai
 - Managing variable scope and lifetime for clarity and efficiency.
 - Handling basic build issues, namespaces, and header inclusion in C++.
 
+---
+### Note for cloning:
+Locally, the compiled version of this project is all in the same folder. After cloning, copy .h files in the same folder as the source files and makefile

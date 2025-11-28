@@ -1,4 +1,4 @@
-# Fitness Tracker v5.0 Functions Index
+# Fitness Tracker v4.0 Functions Index
 
 ## getMonthlyTotal.cpp
 
