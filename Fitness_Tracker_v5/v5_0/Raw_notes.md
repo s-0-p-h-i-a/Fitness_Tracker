@@ -1,4 +1,4 @@
-/** Fitness Tracker v5.0  Refactor
+Fitness Tracker v5.0  Refactor
  * 
  MAIN CHANGES:
  - Moving project to C to start learning
@@ -35,33 +35,3 @@
  
  TO-DO:
  - Learn about data structures in C (data, stack, heap)
-
-
-**/
-
-#include "global.h"
-#include "getMonthlyTotal.h"
-#include "getLevel.h"
-#include "output.h"
-#include <stdio.h>
-#include <string.h>
-
-int main () {
-	
-	int workoutLevels[4];
-		
-	for (int i=0; i<4; ++i) {
-		
-		workoutLevels[i] = getLevel(getMonthlyTotal(i));
-		
-		printf("Level : %d\n", workoutLevels[i]);
-					
-	}
-	
-	for (int i=0; i<4; ++i) {
-		
-		output(workoutType[i], levelFeedback[workoutLevels[i]]);
-	}
-	
-	return 0;
-}
